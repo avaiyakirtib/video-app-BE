@@ -145,4 +145,4 @@ meetingIo.on("connection", (socket) => {
   });
 });
 
-server.listen(3030, "192.168.29.168");
+server.listen(3030);
