@@ -1,24 +1,33 @@
-# Video-chat-v1
+# WebRTC Signalling Server
 
-Video-chat-v1 is a video chat app that makes it easy to groups up with people you want to meet
+## Clone Repository
 
-![IMG](./video-chat.png)
+Clone the repository to your local environment.
 
-Check out the live demo: https://video-chat-app-v1.herokuapp.com/
+```sh
+git clone https://github.com/videosdk-live/webrtc.git
+```
 
-An article I wrote which explains how I build this: https://bit.ly/3wh0gyR
+### Server Setup
 
-This app is build using NodeJS, Socket.io, and Peerjs(WebRTC)
+#### Step 1: Go to  webrtc-signalling-server folder
 
-## How to run the project?
+```js
 
-1. Clone this repository in your local system.
-2. Open the command prompt from your project directory and run the command `npm install`.
-3. Open the command prompt from your project directory and run the command `npm start`.
-4. Go to your browser and type `http://127.0.0.1:3030/` in the address bar.
-5. Hurray! That's it.
+cd webrtc-signalling-server
 
-### ToDo
+```
 
-- [ ] - Recreate the Front-end with React.
+#### Step 2: Install Dependency
 
+```js
+npm install
+```
+
+#### Step 3: Run the project
+
+```js
+npm run start
+```
+
+---
