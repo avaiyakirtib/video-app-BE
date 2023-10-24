@@ -4,9 +4,14 @@
   "description": "WebRTC Signalling Server",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node api.js && node index.js"
   },
-  "keywords": ["webrtc", "nodejs", "socket.io", "signalling"],
+  "keywords": [
+    "webrtc",
+    "nodejs",
+    "socket.io",
+    "signalling"
+  ],
   "author": "Yash Chudasama",
   "license": "ISC",
   "dependencies": {

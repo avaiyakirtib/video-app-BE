@@ -20,6 +20,7 @@ IO.on("connection", (socket) => {
   socket.join(socket.user);
 
   socket.on("makeCall", (data) => {
+    console.log("makeCall");
     let calleeId = data.calleeId;
     let sdpOffer = data.sdpOffer;
 
@@ -30,6 +31,7 @@ IO.on("connection", (socket) => {
   });
 
   socket.on("answerCall", (data) => {
+    console.log("answerCall");
     let callerId = data.callerId;
     let sdpAnswer = data.sdpAnswer;
 
@@ -40,6 +42,7 @@ IO.on("connection", (socket) => {
   });
 
   socket.on("IceCandidate", (data) => {
+    console.log("IceCandidate");
     let calleeId = data.calleeId;
     let iceCandidate = data.iceCandidate;
 
