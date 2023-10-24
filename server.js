@@ -138,7 +138,7 @@ meetingIo.on("connection", (socket) => {
 
   socket.on("disconnect", () => {
     let mySocketIndex = availableUser.findIndex((e) => e.socket === socket.id);
-    console.log('User disconneted', mySocketIndex.userId)
+    console.log('User disconneted', mySocketIndex)
     availableUser.splice(mySocketIndex, 1);
     console.log('Online user ', availableUser.length);
     meetingIo.emit("online-user", availableUser.length);
